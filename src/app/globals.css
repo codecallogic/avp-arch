@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer components {
+  .loading {
+    width: 1vmax;
+    height: 1vmax;
+    border-right: 4px solid #ffffff;
+    border-radius: 100%;
+    animation: spinRight 800ms linear infinite;
+    
+    &:before, &:after {
+      content: '';
+      width: 1vmax;
+      height: 1vmax;
+      display: block;
+      position: absolute;
+      top: calc(50% - .5vmax);
+      left: calc(50% - .5vmax);
+      border-left: 3px solid #ffffff;
+      border-radius: 100%;
+      animation: spinLeft 800ms linear infinite;
+    }
+    
+    &:after {
+      width: .3vmax;
+      height: .3vmax;
+      top: calc(50% - .1vmax);
+      left: calc(50% - .1vmax);
+      border: 0;
+      border-right: 2px solid #ffffff;
+      animation: none;
+    }
+  }
+
+  @keyframes spinLeft {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(720deg);}
+  }
+  
+  @keyframes spinRight {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

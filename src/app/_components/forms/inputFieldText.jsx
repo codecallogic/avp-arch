@@ -1,0 +1,110 @@
+
+const InputFieldText = ({
+  inputType,
+  label,
+  value,
+  dispatch,
+  changeValue,
+  type,
+  labelShow,
+  labelClassOne,
+  inputClassOne,
+  inputClassTwo,
+  inputClassThree,
+  labelClassTwo,
+  id,
+  dropdown,
+  setDropdown,
+  validation,
+  validationMethod
+}) => {
+ 
+  return (
+    <div className="relative">
+      <input 
+        id={id}
+        type={inputType}
+        className={`
+          peer
+          py-5
+          px-1
+          block 
+          w-full 
+          border-schemeseven
+          border-b-[1px]
+          text-sm 
+          placeholder:opacity-0
+          disabled:opacity-50 
+          disabled:pointer-events-none 
+          dark:border-gray-700 
+          text-black
+          dark:focus:ring-gray-600
+          focus:border-schemetwo 
+          focus:border-b-[1px]
+          focus:ring-schemethree 
+          focus:pt-7
+          focus:pb-3
+          [&:not(:placeholder-shown)]:pt-7
+          [&:not(:placeholder-shown)]:pb-3
+          autofill:pt-7
+          autofill:pb-3
+          outline-none
+          ${inputClassOne}
+          ${inputClassTwo}
+          ${inputClassThree}
+        `}
+        placeholder="you@email.com"
+        value={value}
+        onChange={(e) => 
+          validation 
+          ? 
+          (   
+            validationMethod(id),
+            dispatch(e.target.value),
+            setDropdown(dropdown)
+          )
+          :
+          (
+            dispatch(e.target.value),
+            setDropdown(dropdown)
+          )
+        }
+      />
+      {labelShow &&
+        <label 
+          htmlFor="hs-floating-input-email" 
+          className={`
+            absolute 
+            px-1
+            top-0 
+            ${labelClassOne} 
+            py-5 
+            h-full 
+            text-[18px] 
+            text-schemeseven
+            truncate 
+            pointer-events-none 
+            transition 
+            ease-in-out 
+            duration-100 
+            border 
+            border-transparent 
+            ${labelClassTwo}
+            peer-disabled:opacity-50 
+            peer-disabled:pointer-events-none
+            peer-focus:text-xs
+            peer-focus:-translate-y-1.5
+          peer-focus:text-schemeseven
+            peer-[:not(:placeholder-shown)]:text-xs
+            peer-[:not(:placeholder-shown)]:-translate-y-3
+            peer-[:not(:placeholder-shown)]:text-schemetwo
+          `}
+        >
+          {label}
+        </label>
+      }
+    </div>
+  )
+}
+
+export default InputFieldText
