@@ -142,8 +142,8 @@ const Contact = ({}) => {
             setDropdown={setDropdown}
             id={'address'}
           ></InputFieldText>
-          <h1 className="text-schemeseven mt-5">Choose Your Design Direction</h1>
-          <div className="inline-flex items-center text-schemeseven">
+          <h1 className="text-schemefive mt-5">Choose Your Design Direction</h1>
+          <div className="inline-flex items-center text-schemefive">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -165,7 +165,7 @@ const Contact = ({}) => {
             </label>
             Accessory Dwelling Unit (ADU)
           </div> 
-          <div className="inline-flex items-center text-schemeseven">
+          <div className="inline-flex items-center text-schemefive">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -187,7 +187,7 @@ const Contact = ({}) => {
             </label>
             Addition
           </div> 
-          <div className="inline-flex items-center text-schemeseven">
+          <div className="inline-flex items-center text-schemefive">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -209,7 +209,7 @@ const Contact = ({}) => {
             </label>
             Custom Home
           </div> 
-          <div className="inline-flex items-center text-schemeseven">
+          <div className="inline-flex items-center text-schemefive">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -231,7 +231,7 @@ const Contact = ({}) => {
             </label>
             Remodel
           </div> 
-          <div className="inline-flex items-center text-schemeseven">
+          <div className="inline-flex items-center text-schemefive">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -254,11 +254,11 @@ const Contact = ({}) => {
             I'm Not Sure/I'd Like to Discuss Further
           </div> 
           <div className="grid grid-cols-1 py-3 w-full">
-            <label htmlFor="message" className="block mb-2 text-[18px] text-schemeseven">Project Scope</label>
+            <label htmlFor="message" className="block mb-2 text-[18px] text-schemefive">Project Scope</label>
             <textarea 
               id="message" 
               rows="4" 
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 border-none outline-none" 
+              className="block p-2.5 w-full text-sm text-schemefive bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-schemefive dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 border-none outline-none placeholder:text-schemefive" 
               placeholder="What Inspired You to Start This Project? What are you Looking to Achieve? Describe your project... Include any needs, goals, or wants."
               value={instructions}
               onChange={(e) => setInstructions(e.target.value)}

@@ -33,10 +33,32 @@ const About = ({}) => {
             />
             <div className="px-20 mt-20 w-[80%] max-md:px-10 max-md:w-[100%]">
               <h1 className="text-[60px] font-[200] text-schemeeight uppercase">Our Story</h1>
-              <p className="pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">With over 30 years in design and building, we’ve mastered the art of creating homes our clients love. The secret? It’s not about adding complexity but simplifying and focusing on what truly matters.</p>
+              <div className="grid grid-cols-2 pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">
+                <div className="col-span-1">
+                  <Image
+                    src="/assets/abouttwo.jpeg"
+                    width={400}
+                    height={400}
+                    alt="Picture of the author"
+                    className="w-[90%] h-[150px] text-center bg-cover object-cover shadow-md max-lg:w-[75%] max-md:mx-10"
+                  />
+                </div>
+                <p className="col-span-1">With over 30 years in design and building, we’ve mastered the art of creating homes our clients love. The secret? It’s not about adding complexity but simplifying and focusing on what truly matters.</p>
+              </div>
               <h1 className="text-[24px] font-[200] text-schemeeight uppercase">Process</h1>
               <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">We encompass the creative and technical process of designing homes, adus, and other living spaces. We understand that effective space design requires an understanding of how people interact with each other within the space.</p>
-              <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">Bringing a concept to reality involves understanding the needs and preferences of the occupants, as well as considering factors such as site planning, spacial layout, budget, and local building regulation. </p>
+              <div className="grid grid-cols-2 pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">
+                <div className="col-span-1">
+                  <Image
+                    src="/assets/aboutthree.png"
+                    width={400}
+                    height={400}
+                    alt="Picture of the author"
+                    className="w-[90%] h-[150px] text-center bg-cover object-cover shadow-md max-lg:w-[75%] max-md:mx-10"
+                  />
+                </div>
+                <p className="col-span-1">Bringing a concept to reality involves understanding the needs and preferences of the occupants, as well as considering factors such as site planning, spacial layout, budget, and local building regulation. </p>
+              </div>
               <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">From modern open plan living to traditional family homes we understand the challenges that each phase may have and are ready to take them on.</p>
               <div 
                 className="my-10"

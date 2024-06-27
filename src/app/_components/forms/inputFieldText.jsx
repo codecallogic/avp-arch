@@ -81,7 +81,7 @@ const InputFieldText = ({
             py-5 
             h-full 
             text-[18px] 
-            text-schemeseven
+            text-schemefive
             truncate 
             pointer-events-none 
             transition 
@@ -94,7 +94,7 @@ const InputFieldText = ({
             peer-disabled:pointer-events-none
             peer-focus:text-xs
             peer-focus:-translate-y-1.5
-          peer-focus:text-schemeseven
+          peer-focus:text-schemefive
             peer-[:not(:placeholder-shown)]:text-xs
             peer-[:not(:placeholder-shown)]:-translate-y-3
             peer-[:not(:placeholder-shown)]:text-schemetwo
