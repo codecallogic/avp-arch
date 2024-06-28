@@ -25,7 +25,7 @@ const Hero = () => {
   
   return (
     <section
-      className='w-full flex flex-col h-[1500px] md:gap-10 md:max-container md:mb-5 md:px-[6rem]'
+      className='w-full flex flex-col h-[1000px] md:gap-10 md:max-container md:mb-5 md:px-[6rem] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px]'
     >
       {/* <video
         className='absolute inset-0 w-full h-[1200px] object-cover max-md:hidden'
@@ -37,20 +37,20 @@ const Hero = () => {
       </video> */}
       <Image
         ref={parallaxOne}
-        src="/assets/homeone.png"
+        src="/assets/homeone.1.png"
         width={1900}
         height={1200}
         alt="Picture of the author"
-        className="absolute z-10 inset-0 top-[150px] w-full h-[1500px] text-center bg-cover object-cover max-lg:h-[1000px] max-sm:h-[600px] max-sm:top-[180px]"
+        className="absolute z-10 inset-0 -top-[50px] w-full h-[1000px] text-center bg-cover object-cover max-lg:h-[1000px] max-sm:h-[600px] max-sm:top-[180px] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px] min-[2800px]:-top-[60px] min-[2000px]:-top-[60px]"
       />
       <div className="relative -z-1">
-        <div className="fixed top-[50px] right-[200px] flex flex-col items-center justify-center py-3 max-sm:top-[80px] max-sm:left-[100px]">
+        <div className="fixed top-[100px] right-[150px] flex flex-col items-center justify-center py-3 max-sm:top-[80px] max-sm:left-[100px]">
           <Image
             src="/assets/logo.png"
             width={250}
             height={250}
             alt="Picture of the author"
-            className=" w-full h-[120px] p-0 text-center max-lg:w-[100%] max-md:h-[100px] max-sm:h-[70px] max-sm:w-[50%]"
+            className="w-full h-[100px] p-0 text-center max-lg:w-[100%] max-md:h-[100px] max-sm:h-[70px] max-sm:w-[50%]"
           />
           <div className="w-full border-t-schemefour border-2 border-b-0 border-r-0 border-l-0 py-5 my-3">
             <div className="text-schemeone text-[12px] font-[700] font-montserrat">House Plans / Building Designs</div>

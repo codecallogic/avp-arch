@@ -2,8 +2,7 @@ import { gql } from '@apollo/client';
 
 export default gql`
 mutation contact(
-  $firstName: String!,
-  $lastName: String!,
+  $name: String!,
   $email: String!,
   $phone: String!,
   $address: String!,
@@ -15,8 +14,7 @@ mutation contact(
   $instructions: String!
 ) {
   contact(
-    firstName: $firstName,
-    lastName: $lastName,
+    name: $name,
     email: $email,
     phone: $phone,
     address: $address,

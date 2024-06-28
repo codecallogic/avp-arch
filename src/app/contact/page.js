@@ -10,8 +10,7 @@ import CONTACT_ME from '@/app/_mutations/contact'
 
 const Contact = ({}) => {
   
-  const [firstName, setFirstName]       = useState('')
-  const [lastName, setLastName]         = useState('')
+  const [name, setName]                 = useState('')
   const [email, setEmail]               = useState('')
   const [phone, setPhone]               = useState('')
   const [address, setAddress]           = useState('')
@@ -30,14 +29,16 @@ const Contact = ({}) => {
 
   const submitContactMe = async () => {
 
+    if(!name) return setMessage('Name is required')
+    if(!email) return setMessage('Email is required')
+    if(!phone) return setMessage('Phone is required')
     setLoading('contactMe')
     
     try {
 
       const response = await contactMe({
         variables: {
-          firstName: firstName,
-          lastName: lastName,
+          name: name,
           email: email,
           phone: phone,
           address: address,
@@ -50,7 +51,7 @@ const Contact = ({}) => {
         }
       })
       
-      setFirstName('')
+      setName('')
       setLastName('')
       setEmail('')
       setPhone('')
@@ -72,39 +73,27 @@ const Contact = ({}) => {
   }
   
   return (
-    <div className="px-[300px] py-[250px] h-full grid grid-cols-4 max-2xl:px-[200px] max-xl:px-[100px] max-sm:px-[30px] max-sm:py-[150px]">
+    <div className="bg-schemefive text-white dark:text-white px-[300px] py-[250px] h-full grid grid-cols-4 max-2xl:px-[200px] max-xl:px-[100px] max-sm:px-[30px] max-sm:py-[150px]">
       <div className="col-span-2 max-xl:col-span-3 max-md:col-span-4">
-        <h1 className="text-[60px] font-[200] uppercase text-schemenine max-sm:text-[42px]">Contact Us</h1>
-        <h2 className="text-[24px] font-[200] uppercase text-schemenine py-8">READY TO TRANSFORM YOUR SPACE?</h2>
-        <p className="text-[16px] font-[200] text-schemefive">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <h1 className="text-[60px] font-[200] uppercase text-white dark:text-white  max-sm:text-[42px]">Contact Us</h1>
+        <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white  py-8">READY TO TRANSFORM YOUR SPACE?</h2>
+        <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         <br />
-        <p className="text-[16px] font-[200] text-schemefive">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        <h2 className="text-[24px] font-[200] uppercase text-schemenine mt-10 mb-5">Secure Your Spot for 2024 Book Your Design Consultation</h2>
-        <p className="text-[16px] font-[200] text-schemefive">You're just a moment away from joining our community of homeowners living in a space they love. Please complete the form below and click 'Book My Design Consultation' to start. We can't wait to meet you and collaborate to design your ideal space. Welcome to the family!</p>
+        <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white mt-10 mb-5">Secure Your Spot for 2024 Book Your Design Consultation</h2>
+        <p className="text-[16px] font-[200] text-white dark:text-white ">You're just a moment away from joining our community of homeowners living in a space they love. Please complete the form below and click 'Book My Design Consultation' to start. We can't wait to meet you and collaborate to design your ideal space. Welcome to the family!</p>
         <div className="w-[80%] flex flex-col gap-y-3 my-3">
           <InputFieldText
             inputType={'text'}
-            label={'First Name *'}
-            value={firstName}
-            dispatch={setFirstName}
-            type={'firstName'}
+            label={'Name *'}
+            value={name}
+            dispatch={setName}
+            type={'name'}
             labelShow={true}
             labelClassOne={'start-0 border-none w-full'}
             dropdown={''}
             setDropdown={setDropdown}
-            id={'firstName'}
-          ></InputFieldText>
-          <InputFieldText
-            inputType={'text'}
-            label={'Last Name *'}
-            value={lastName}
-            dispatch={setLastName}
-            type={'lastName'}
-            labelShow={true}
-            labelClassOne={'start-0 border-none w-full'}
-            dropdown={''}
-            setDropdown={setDropdown}
-            id={'lastName'}
+            id={'name'}
           ></InputFieldText>
           <InputFieldText
             inputType={'text'}
@@ -132,7 +121,7 @@ const Contact = ({}) => {
           ></InputFieldText>
           <InputFieldText
             inputType={'text'}
-            label={'Address *'}
+            label={'Address'}
             value={address}
             dispatch={setAddress}
             type={'address'}
@@ -142,8 +131,8 @@ const Contact = ({}) => {
             setDropdown={setDropdown}
             id={'address'}
           ></InputFieldText>
-          <h1 className="text-schemefive mt-5">Choose Your Design Direction</h1>
-          <div className="inline-flex items-center text-schemefive">
+          <h1 className="text-white dark:text-whitemt-5">Choose Your Design Direction</h1>
+          <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -165,7 +154,7 @@ const Contact = ({}) => {
             </label>
             Accessory Dwelling Unit (ADU)
           </div> 
-          <div className="inline-flex items-center text-schemefive">
+          <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -187,7 +176,7 @@ const Contact = ({}) => {
             </label>
             Addition
           </div> 
-          <div className="inline-flex items-center text-schemefive">
+          <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -209,7 +198,7 @@ const Contact = ({}) => {
             </label>
             Custom Home
           </div> 
-          <div className="inline-flex items-center text-schemefive">
+          <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -229,9 +218,9 @@ const Contact = ({}) => {
                 </svg>
               </span>
             </label>
-            Remodel
+            Rennovation
           </div> 
-          <div className="inline-flex items-center text-schemefive">
+          <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
                 type="checkbox"
@@ -251,32 +240,38 @@ const Contact = ({}) => {
                 </svg>
               </span>
             </label>
-            I'm Not Sure/I'd Like to Discuss Further
+            Other
           </div> 
           <div className="grid grid-cols-1 py-3 w-full">
-            <label htmlFor="message" className="block mb-2 text-[18px] text-schemefive">Project Scope</label>
+            <label htmlFor="message" className="block mb-2 text-[18px] text-white dark:text-white">Project Scope</label>
             <textarea 
               id="message" 
               rows="4" 
-              className="block p-2.5 w-full text-sm text-schemefive bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-schemefive dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 border-none outline-none placeholder:text-schemefive" 
-              placeholder="What Inspired You to Start This Project? What are you Looking to Achieve? Describe your project... Include any needs, goals, or wants."
+              className="block p-2.5 w-full text-sm text-schemefive bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-schemefive dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-schemefive" 
+              placeholder="Brief description"
               value={instructions}
               onChange={(e) => setInstructions(e.target.value)}
               >
             </textarea>
           </div>
-          
+          { message &&
+            <div 
+              className="grid grid-cols-1 py-3 w-full px-5 text-white dark:text-white italic"
+            >              
+              *{message.substring(0,120)}
+            </div>
+          }
           <div
             onClick={() => submitContactMe()}
           >
             <Button
-              label='Book my design consultation'
+              label='Submit'
               backgroundColor={'#564E58'}
               svgColor={'white'}
               width={150}
               height={50}
               font={500}
-              fullWidth={true}
+              fullWidth={false}
               textColor={'#FFFFFF'}
               borderColor={'#564E58'}
               svg={''}
