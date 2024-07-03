@@ -35,7 +35,7 @@ export const projects = [
   {
     title: '20th Ave Townhome',
     location: 'Federal Way, WA',
-    building: 'xxxsf, 3-Story, 5BR, 3BA',
+    building: '3032sf Living / 1387sf Garage 3-Story / 4BR + Office / 3BA',
     consultants: 'Bruce Engineering',
     status: 'Completed 2024',
     image: 'projectfive.jpeg',
@@ -64,7 +64,7 @@ export const projects = [
   {
     title: 'SECRET RAVINE RESIDENCE',
     location: 'Location: Rocklin, CA',
-    building: 'xxxsf, xxxsf porches, 1-Story, 5BR, 3BA',
+    building: '3742sf Living / 901sf Garage / 1098sf Porches1-Story / 4BR + Office / 6BA',
     consultants: 'AY Engineering',
     status: 'Completed 2024',
     image: 'projecttwo.jpeg',
