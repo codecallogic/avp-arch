@@ -39,7 +39,7 @@ export const projects = [
     consultants: 'Bruce Engineering',
     status: 'Completed 2024',
     image: 'projectfive.jpeg',
-    video: 'https://avparch.s3.us-west-1.amazonaws.com/projectfive.mp4',
+    video: 'https://avparch.s3.us-west-1.amazonaws.com/projectfive.2.mp4',
     imageTwo: 'projectfive.1.jpeg',
     imageThree: 'projectfive.2.jpeg',
     imageFour: '',
@@ -72,7 +72,7 @@ export const projects = [
     imageTwo: 'projecttwo.1.jpeg',
     imageThree: 'projecttwo.2.jpeg',
     imageFour: '',
-    description: 'Integer auctor, velit eu mattis laoreet, magna eros bibendum nibh, in lacinia augue elit eget mauris. Aenean risus urna, iaculis in sem id, porttitor condimentum tellus. Nulla sit amet dapibus dui, nec interdum nisi. Integer tincidunt ante pharetra nisi tempus varius. Praesent efficitur metus nulla, sit amet rutrum nunc porttitor non. Proin vitae placerat urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer auctor, velit eu mattis laoreet, magna eros bibendum nibh, in lacinia augue elit eget mauris. Aenean risus urna, iaculis in sem id, porttitor condimentum tellus. Nulla sit amet dapibus dui, nec interdum nisi. Integer tincidunt ante pharetra nisi tempus varius. Praesent efficitur metus nulla, sit amet rutrum nunc porttitor non. Proin vitae placerat urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer auctor, velit eu mattis laoreet, magna eros bibendum nibh, in lacinia augue elit eget mauris. Aenean risus urna, iaculis in sem id, porttitor condimentum tellus. Nulla sit amet dapibus dui, nec interdum nisi. Integer tincidunt ante pharetra nisi tempus varius. Praesent efficitur metus nulla, sit amet rutrum nunc porttitor non. Proin vitae placerat urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+    description: 'Located on a 3.2 acre lot, this craftsman style ranch home brings together an emphasis on horizontality and low-pitched roof areas. Walking up to the front, you&rsquo;re surrounded by a wide and covered front porch with thick tapered columns. Strong earth tone elements including stone and sage lead up to a rustic front door with a fixed transom above. A lower sloped gable roof with wide overhanging eaves extend past the home&rsquo;s exterior walls shadow the windows below. Large bay and picture windows have small overhanging roof ledge and rafter tails. Inside an open living kitchen, a hand-laid stone fireplace and loft above the garage provides functional and warm relaxing areas that are sure to last for the family and guests for many years to come.',
     shortDescr: 300,
     longDescr: 700
   },
