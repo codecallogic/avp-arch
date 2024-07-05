@@ -43,10 +43,10 @@ const About = ({}) => {
                     className="w-[90%] h-[150px] text-center bg-cover object-cover shadow-md max-lg:mb-5 max-md:h-[250px] max-lg:w-[100%]"
                   />
                 </div>
-                <p className="col-span-1">With over 30 years in design and building, we’ve mastered the art of creating homes our clients love. The secret? It’s not about adding complexity but simplifying and focusing on what truly matters.</p>
+                <p className="col-span-1">AVP Architecture began in 2017 with a desire to bring clients ideas and projects to life. From small to larger type work, each is unique with its needs and challenges.</p>
               </div>
               <h1 className="text-[24px] font-[200] text-schemeeight uppercase">Process</h1>
-              <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">We encompass the creative and technical process of designing homes, adus, and other living spaces. We understand that effective space design requires an understanding of how people interact with each other within the space.</p>
+              <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">We hope to make the process smooth and understandable for you, whether it’s just a few renderings to pitch an idea or a full house plan permit set, be confident that your project will be in the right hands. We encompass the creative and technical process of designing homes, adus, and other living spaces. We understand that effective space design requires an understanding of how people interact with each other within the space.</p>
               <div className="grid grid-cols-2 pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em] max-lg:grid-cols-1">
                 <div className="col-span-1">
                   <Image

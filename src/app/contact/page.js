@@ -76,10 +76,10 @@ const Contact = ({}) => {
     <div className="bg-schemefive text-white dark:text-white px-[300px] py-[250px] h-full grid grid-cols-4 max-2xl:px-[200px] max-xl:px-[100px] max-sm:px-[30px] max-sm:py-[150px]">
       <div className="col-span-2 max-xl:col-span-3 max-md:col-span-4">
         <h1 className="text-[60px] font-[200] uppercase text-white dark:text-white  max-sm:text-[42px]">Contact Us</h1>
-        <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white  py-8">READY TO TRANSFORM YOUR SPACE?</h2>
+        {/* <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white  py-8">READY TO TRANSFORM YOUR SPACE?</h2>
         <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         <br />
-        <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> */}
         <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white mt-10 mb-5">Secure Your Spot for 2024 Book Your Design Consultation</h2>
         <p className="text-[16px] font-[200] text-white dark:text-white ">You're just a moment away from joining our community of homeowners living in a space they love. Please complete the form below and click 'Book My Design Consultation' to start. We can't wait to meet you and collaborate to design your ideal space. Welcome to the family!</p>
         <div className="w-[80%] flex flex-col gap-y-3 my-3">
