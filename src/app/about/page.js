@@ -29,7 +29,7 @@ const About = ({}) => {
               width={400}
               height={400}
               alt="Picture of the author"
-              className="w-[50%] h-[400px] text-center bg-cover object-cover shadow-md mx-2 my-10 max-lg:w-[75%] max-md:mx-10"
+              className="w-[50%] h-[400px] text-center bg-cover object-cover object-[0_20%] shadow-md rounded-[50%] mx-3 my-10 max-lg:w-[75%] max-md:mx-10"
             />
             <div className="px-20 mt-20 w-[80%] max-md:px-10 max-md:w-[100%]">
               <h1 className="text-[60px] font-[200] text-white dark:text-white uppercase">Our Story</h1>
