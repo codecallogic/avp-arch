@@ -9,7 +9,7 @@ const Services = ({}) => {
       <div className="w-[60%] pb-[250px]">
         <div className="mt-[250px] px-[100px] text-white max-2xl:px-[100px] max-xl:px-[50px] max-sm:px-0 max-lg:mt-[150px]">
           <h1 className="text-[60px] font-[200] uppercase my-5 max-sm:text-[42px]">Services</h1>
-          <h1 className="text-[18px] font-[600]">Typical Plan Set</h1>
+          {/* <h1 className="text-[18px] font-[600]">Typical Plan Set</h1> */}
           <p className="pt-5 font-[200] text-[14px] translate-[.02em] leading-[1.5em]">Typical Plan Set</p>
           <p className="pt-5 font-[200] text-[14px] translate-[.02em] leading-[1.5em]">Cover Page/Site Plan</p>
           <p className="pt-5 font-[200] text-[14px] translate-[.02em] leading-[1.5em]">Notes/Standards</p>

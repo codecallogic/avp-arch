@@ -20,12 +20,13 @@ const About = ({}) => {
               width={400}
               height={400}
               alt="Picture of the author"
-              className="w-[400px] h-[400px] text-center bg-cover object-cover object-[0_20%] shadow-md rounded-full mx-3 my-10 max-md:mx-10"
+              className="w-[200px] h-[200px] text-center bg-cover object-cover object-[0_20%] shadow-xl rounded-full my-10 mx-20 max-md:mx-10"
             />
             <h1 
               className="mt-[30px] px-20 uppercase text-[22px] font-[200] text-white dark:text-white" 
             >
-              Arthur Pristupa Owner
+              <div>Arthur Pristupa</div>
+              <span className="text-[16px]">Owner</span>
             </h1>
             <div className="px-20 mt-20 w-[80%] max-md:px-10 max-md:w-[100%]">
               <h1 className="text-[60px] font-[200] text-white dark:text-white uppercase">Our Story</h1>

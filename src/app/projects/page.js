@@ -46,17 +46,20 @@ const Projects = ({}) => {
             >
               <Image
                 src={`/assets/projects/${item.image}`}
-                width={800}
-                height={800}
+                width={2000}
+                height={2000}
                 alt="Picture of project"
+                layout="responsive"
+                quality={100}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="w-[100%] h-[500px] text-center bg-cover object-cover shadow-lg my-10 min-[2800px]:h-[700px] max-lg:w-[80%] max-sm:w-[100%]"
               /> 
               <div className="w-[100%] grid grid-cols-12 my-3 max-lg:w-[80%] max-sm:w-[100%]">
-                <div className="col-span-5 max-sm:col-span-12 max-sm:my-3 max-sm:order-2">
-                  <div className="grid grid-cols-8 animate-fade-in gap-x-2">
-                    <div className="col-span-6 shadow-sm rounded-md">
+                <div className="col-span-6 max-sm:col-span-12 max-sm:my-3 max-sm:order-2">
+                  <div className="w-full grid grid-cols-8 animate-fade-in gap-x-2 ">
+                    <div className="w-full col-span-8 shadow-sm rounded-md ">
                     {item.video &&
-                      <video className="h-[250px]" width="320" height="240" controls preload="none">
+                      <video className="w-[550px] h-[250px]" controls preload="none">
                         <source src={item.video} type="video/mp4" />
                         <track
                           src={item.video}
@@ -68,37 +71,46 @@ const Projects = ({}) => {
                       </video>
                     }
                     </div>
-                    <div className="col-span-6 shadow-sm rounded-md">
+                    <div className="col-span-8 shadow-sm rounded-md">
                       {item.imageTwo &&
                         <Image
                           src={`/assets/projects/${item.imageTwo}`}
                           width={800}
                           height={800}
                           alt="Picture of project"
+                          layout="responsive"
+                          quality={100}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className="w-[100%] h-[250px] text-center bg-cover object-cover shadow-lg my-2"
                           onError={() => setErrorImages([...errorImages, `/assets/projects/${item.image.replace('.jpeg', '')}.1.jpeg`])}
                         />
                       }
                     </div>
-                    <div className="col-span-3 shadow-sm rounded-md">
+                    <div className="col-span-4 shadow-sm rounded-md">
                       {item.imageThree &&
                       <Image
                         src={`/assets/projects/${item.imageThree}`}
                         width={800}
                         height={800}
                         alt="Picture of project"
+                        layout="responsive"
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="w-[100%] h-[250px] text-center bg-cover object-cover shadow-lg my-2"
                         onError={() => setErrorImages([...errorImages, `/assets/projects/${item.image.replace('.jpeg', '')}.2.jpeg`])}
                       />
                       }
                     </div>
-                    <div className="col-span-3 shadow-sm rounded-md">
+                    <div className="col-span-4 shadow-sm rounded-md">
                       {item.imageFour && 
                         <Image
                           src={`/assets/projects/${item.imageFour}`}
                           width={800}
                           height={800}
                           alt="Picture of project"
+                          layout="responsive"
+                          quality={100}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className="w-[100%] h-[200px] text-center bg-cover object-cover shadow-lg my-2"
                           onError={() => setErrorImages([...errorImages, `/assets/projects/${item.image.replace('.jpeg', '')}.3.jpeg`])}
                         />
@@ -106,7 +118,7 @@ const Projects = ({}) => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-start col-span-7 px-10 max-sm:col-span-12 max-sm:order-1">
+                <div className="flex flex-col justify-start col-span-6 px-8 max-sm:col-span-12 max-sm:order-1 ">
                   <h1 className="text-[32px] text-white dark:text-white font-[300]">{item.title}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Location: {item.location}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Building Information: {item.building}</h1>
@@ -118,33 +130,6 @@ const Projects = ({}) => {
                   {item.paragraphFour && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphFour}</p>}
                   {item.paragraphFive && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphFive}</p>}
                   {item.paragraphSix && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphSix}</p>}
-                  {/* { readMore == item.title &&
-                    <p 
-                      className="font-[200] text-[14px] my-5 animate-fade-in text-white dark:text-white"
-                    >
-                      {item.description}
-                    </p>
-                  }
-                   { readMore == item.title &&
-                      <div className="w-full flex justify-center">
-                      <div 
-                        className="w-max text-schemeseven border-b-schemeseven border-b-2 my-3 outline-none p-3 hover:cursor-pointer hover:scale-[120%] hover:text-schemenine hover:transition hover:duration-700 hover:ease-in-out"
-                        onClick={() => setReadMore('')}
-                      >
-                        <span>Show less</span>
-                      </div>
-                    </div>
-                    }
-                    { readMore !== item.title &&
-                    <div className="w-full flex justify-center">
-                      <div 
-                        className="w-max text-schemeseven border-b-schemeseven border-b-2 my-3 outline-none p-3 hover:cursor-pointer hover:scale-[120%] hover:text-schemenine hover:transition hover:duration-700 hover:ease-in-out"
-                        onClick={() => setReadMore(item.title)}
-                      >
-                        <span>Read more</span>
-                      </div>
-                    </div>
-                    } */}
                 </div>
               </div>
             </div>
