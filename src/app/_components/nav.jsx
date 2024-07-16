@@ -45,7 +45,7 @@ function Nav() {
     };
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
-  const fixedClass = isFixed ? ' bg-white bg-opacity-50 h-[115px] max-md:h-[75px]' : ' bg-white  bg-opacity-50 ';
+  const fixedClass = isFixed ? ` bg-white h-[115px] max-md:h-[75px] ${pathname == '/' ? ' bg-opacity-[50%] ' : '' }` : ` bg-white ${pathname == '/' ? ' bg-opacity-[50%] ' : '' }`;
 
   useEffect(() => {
     setLoginState(authReducer)

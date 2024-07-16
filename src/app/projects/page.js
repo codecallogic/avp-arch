@@ -112,10 +112,13 @@ const Projects = ({}) => {
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Building Information: {item.building}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Consultants: {item.consultants}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Status: {item.status}</h1>
-                  { readMore !== item.title &&
-                    <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.description.substring(0, item.shortDescr)}</p>
-                  }
-                  { readMore == item.title &&
+                  {item.description && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.description}</p>}
+                  {item.paragraphTwo && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphTwo}</p>}
+                  {item.paragraphThree && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphThree}</p>}
+                  {item.paragraphFour && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphFour}</p>}
+                  {item.paragraphFive && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphFive}</p>}
+                  {item.paragraphSix && <p className="font-[200] text-[14px] my-5 text-white dark:text-white">{item.paragraphSix}</p>}
+                  {/* { readMore == item.title &&
                     <p 
                       className="font-[200] text-[14px] my-5 animate-fade-in text-white dark:text-white"
                     >
@@ -141,7 +144,7 @@ const Projects = ({}) => {
                         <span>Read more</span>
                       </div>
                     </div>
-                    }
+                    } */}
                 </div>
               </div>
             </div>

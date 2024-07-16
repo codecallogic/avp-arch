@@ -10,6 +10,7 @@ mutation contact(
   $addition: Boolean!,
   $custom: Boolean!,
   $remodel: Boolean!,
+  $tenantImprovement: Boolean!,
   $notSure: Boolean!,
   $instructions: String!
 ) {
@@ -22,6 +23,7 @@ mutation contact(
     addition: $addition,
     custom: $custom,
     remodel: $remodel,
+    tenantImprovement: $tenantImprovement,
     notSure: $notSure,
     instructions: $instructions
   ) {

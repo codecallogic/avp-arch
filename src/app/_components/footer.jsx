@@ -78,7 +78,7 @@ const Footer = ({}) => {
                 className="flex flex-col items-start justify-start gap-y-3 tracking-wide font-[400] text-schemeseven transition-all ease-in-out uppercase text-[12px]"
               >
                 <h1>Contact</h1>
-                <span className="text-schemenine hover:cursor-pointer hover:text-white">209.813.0257</span>
+                <span className="text-schemenine hover:cursor-pointer hover:text-white">916.399.3767</span>
               </a>
             </li>
             <li 

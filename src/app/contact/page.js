@@ -10,19 +10,20 @@ import CONTACT_ME from '@/app/_mutations/contact'
 
 const Contact = ({}) => {
   
-  const [name, setName]                 = useState('')
-  const [email, setEmail]               = useState('')
-  const [phone, setPhone]               = useState('')
-  const [address, setAddress]           = useState('')
-  const [adu, setADU]                   = useState(false)
-  const [addition, setAddition]         = useState(false)
-  const [custom, setCustom]             = useState(false)
-  const [remodel, setRemodel]           = useState(false)
-  const [notSure, setNotSure]           = useState(false)
-  const [instructions, setInstructions] = useState('')
-  const [loading, setLoading]           = useState('')
-  const [message, setMessage]           = useState('')
-  const [dropdown, setDropdown]         = useState('')
+  const [name, setName]                               = useState('')
+  const [email, setEmail]                             = useState('')
+  const [phone, setPhone]                             = useState('')
+  const [address, setAddress]                         = useState('')
+  const [adu, setADU]                                 = useState(false)
+  const [addition, setAddition]                       = useState(false)
+  const [custom, setCustom]                           = useState(false)
+  const [remodel, setRemodel]                         = useState(false)
+  const [tenantImprovement, setTenantImprovement]     = useState(false)
+  const [notSure, setNotSure]                         = useState(false)
+  const [instructions, setInstructions]               = useState('')
+  const [loading, setLoading]                         = useState('')
+  const [message, setMessage]                         = useState('')
+  const [dropdown, setDropdown]                       = useState('')
 
   //// MUTATIONS
   const [contactMe, { dataContactMe, loadingContactMe, errorContactMe }] = useMutation(CONTACT_ME)
@@ -46,6 +47,7 @@ const Contact = ({}) => {
           addition: addition,
           custom: custom,
           remodel: remodel,
+          tenantImprovement: tenantImprovement,
           notSure: notSure,
           instructions: instructions,
         }
@@ -76,12 +78,10 @@ const Contact = ({}) => {
     <div className="bg-schemefive text-white dark:text-white px-[300px] py-[250px] h-full grid grid-cols-4 max-2xl:px-[200px] max-xl:px-[100px] max-sm:px-[30px] max-sm:py-[150px]">
       <div className="col-span-2 max-xl:col-span-3 max-md:col-span-4">
         <h1 className="text-[60px] font-[200] uppercase text-white dark:text-white  max-sm:text-[42px]">Contact Us</h1>
-        {/* <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white  py-8">READY TO TRANSFORM YOUR SPACE?</h2>
-        <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <p className="text-[16px] font-[200] text-white dark:text-white">Lets work together 916.399.3767 or arthur@avparch.com.</p>
         <br />
-        <p className="text-[16px] font-[200] text-white dark:text-white ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> */}
-        <h2 className="text-[24px] font-[200] uppercase text-white dark:text-white mt-10 mb-5">Secure Your Spot for 2024 Book Your Design Consultation</h2>
-        <p className="text-[16px] font-[200] text-white dark:text-white ">You're just a moment away from joining our community of homeowners living in a space they love. Please complete the form below and click 'Book My Design Consultation' to start. We can't wait to meet you and collaborate to design your ideal space. Welcome to the family!</p>
+        <p className="text-[16px] font-[200] text-white dark:text-white">Fill out this form or reach out to us via phone or email to schedule a call to discuss your project. </p>
+        <br />
         <div className="w-[80%] flex flex-col gap-y-3 my-3">
           <InputFieldText
             inputType={'text'}
@@ -220,6 +220,28 @@ const Contact = ({}) => {
             </label>
             Rennovation
           </div> 
+          <div className="inline-flex items-center text-white dark:text-white">
+            <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <input 
+                type="checkbox"
+                className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                id="checkbox"
+                checked={tenantImprovement}
+                onChange={() => tenantImprovement ? setTenantImprovement(false) : setTenantImprovement(true)}
+              />
+              <span
+                className="absolute text-schemetwo transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                  stroke="currentColor" strokeWidth="1">
+                  <path fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"></path>
+                </svg>
+              </span>
+            </label>
+            Tenant Improvement
+          </div>
           <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
               <input 
