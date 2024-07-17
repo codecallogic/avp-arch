@@ -116,6 +116,51 @@ const Projects = ({}) => {
                         />
                       }
                     </div>
+                    <div className="col-span-4 shadow-sm rounded-md">
+                      {item.imageFive && 
+                        <Image
+                          src={`/assets/projects/${item.imageFive}`}
+                          width={800}
+                          height={800}
+                          alt="Picture of project"
+                          layout="responsive"
+                          quality={100}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="w-[100%] h-[200px] text-center bg-cover object-cover shadow-lg my-2"
+                          onError={() => setErrorImages([...errorImages, `/assets/projects/${item.image.replace('.jpeg', '')}.3.jpeg`])}
+                        />
+                      }
+                    </div>
+                    <div className="col-span-4 shadow-sm rounded-md">
+                      {item.imageSix &&
+                      <Image
+                        src={`/assets/projects/${item.imageSix}`}
+                        width={800}
+                        height={800}
+                        alt="Picture of project"
+                        layout="responsive"
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="w-[100%] h-[250px] text-center bg-cover object-cover shadow-lg my-2"
+                        onError={() => setErrorImages([...errorImages, `/assets/projects/${item.image.replace('.jpeg', '')}.2.jpeg`])}
+                      />
+                      }
+                    </div>
+                    <div className="col-span-4 shadow-sm rounded-md">
+                      {item.imageSeven && 
+                        <Image
+                          src={`/assets/projects/${item.imageSeven}`}
+                          width={800}
+                          height={800}
+                          alt="Picture of project"
+                          layout="responsive"
+                          quality={100}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="w-[100%] h-[200px] text-center bg-cover object-cover shadow-lg my-2"
+                          onError={() => setErrorImages([...errorImages, `/assets/projects/${item.image.replace('.jpeg', '')}.3.jpeg`])}
+                        />
+                      }
+                    </div>
                   </div>
                 </div>
                 <div className="flex flex-col justify-start col-span-6 px-8 max-sm:col-span-12 max-sm:order-1 ">

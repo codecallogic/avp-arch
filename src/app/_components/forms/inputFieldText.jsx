@@ -27,12 +27,13 @@ const InputFieldText = ({
         className={`
           peer
           py-5
-          px-1
+          px-2
           block 
           w-full 
           border-schemeseven
           border-b-[1px]
           text-sm 
+          rounded-lg
           placeholder:opacity-0
           disabled:opacity-50 
           disabled:pointer-events-none 

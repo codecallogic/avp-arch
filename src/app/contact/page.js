@@ -90,7 +90,7 @@ const Contact = ({}) => {
             dispatch={setName}
             type={'name'}
             labelShow={true}
-            labelClassOne={'start-0 border-none w-full'}
+            labelClassOne={'start-1 border-none w-full'}
             dropdown={''}
             setDropdown={setDropdown}
             id={'name'}
@@ -102,7 +102,7 @@ const Contact = ({}) => {
             dispatch={setEmail}
             type={'email'}
             labelShow={true}
-            labelClassOne={'start-0 border-none w-full'}
+            labelClassOne={'start-1 border-none w-full'}
             dropdown={''}
             setDropdown={setDropdown}
             id={'email'}
@@ -114,19 +114,19 @@ const Contact = ({}) => {
             dispatch={setPhone}
             type={'phone'}
             labelShow={true}
-            labelClassOne={'start-0 border-none w-full'}
+            labelClassOne={'start-1 border-none w-full'}
             dropdown={''}
             setDropdown={setDropdown}
             id={'phone'}
           ></InputFieldText>
           <InputFieldText
             inputType={'text'}
-            label={'Address'}
+            label={'Address or City / County'}
             value={address}
             dispatch={setAddress}
             type={'address'}
             labelShow={true}
-            labelClassOne={'start-0 border-none w-full'}
+            labelClassOne={'start-1 border-none w-full'}
             dropdown={''}
             setDropdown={setDropdown}
             id={'address'}
