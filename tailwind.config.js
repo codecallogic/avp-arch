@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       'montserrat': ['var(--font-montserrat)'],
+      'above': ['var(--font-above)']
     },
     colors: {
       'schemeone': '#98C62B',
