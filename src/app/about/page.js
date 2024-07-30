@@ -15,21 +15,23 @@ const About = ({}) => {
       <div className="relative">
         <div className="relative flex justify-center items-center mt-200 h-full shadow-2xl">
           <div className="w-[50%] mt-[120px] py-10 flex justify-center flex-col max-2xl:w-[60%] max-xl:w-[75%] max-lg:w-[85%]">
-            <Image
-              src="/assets/aboutone.png"
-              width={400}
-              height={400}
-              alt="Picture of the author"
-              className="w-[200px] h-[200px] text-center bg-cover object-cover object-[0_20%] shadow-xl rounded-full my-10 mx-20 max-md:mx-10"
-            />
-            <h1 
-              className="mt-[30px] px-20 uppercase text-[22px] font-[200] text-white dark:text-white" 
-            >
-              <div>Arthur Pristupa</div>
-              <span className="text-[16px]">Owner</span>
-            </h1>
+            <h1 className="text-[60px] px-20 w-[80%] font-[200] text-white dark:text-white uppercase">Our Story</h1>
+            <div className="flex flex-col items-center px-20 w-[80%]">
+              <Image
+                src="/assets/aboutone.png"
+                width={400}
+                height={400}
+                alt="Picture of the author"
+                className="w-[200px] h-[200px] text-center bg-cover object-cover object-[0_20%] shadow-xl rounded-full my-10 max-md:mx-10"
+              />
+              <h1 
+                className="mt-[30px] w-max px-20 uppercase text-[22px] font-[200] text-white dark:text-white" 
+              >
+                <div>Arthur Pristupa</div>
+                <span className="block text-center text-[14px] lowercase">Owner</span>
+              </h1>
+            </div>
             <div className="px-20 mt-20 w-[80%] max-md:px-10 max-md:w-[100%]">
-              <h1 className="text-[60px] font-[200] text-white dark:text-white uppercase">Our Story</h1>
               <div className="grid grid-cols-2 pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em] max-lg:grid-cols-1">
                 <div className="col-span-1">
                   <Image

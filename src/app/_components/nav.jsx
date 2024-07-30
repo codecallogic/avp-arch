@@ -80,7 +80,7 @@ function Nav() {
                 key={idx}
               >
                 <a
-                  className="flex items-center justify-end w-[100%] leading-[50px] tracking-wide font-[400] text-gray-600 [&>*:nth-child(1)]:ml-2 hover:text-schemetwo transition-all ease-in-out uppercase text-[12px] z-5 hover:cursor-pointer"
+                  className="flex items-center justify-end w-[100%] leading-[50px] tracking-wide font-[600] text-gray-600 [&>*:nth-child(1)]:ml-2 hover:text-schemetwo transition-all ease-in-out uppercase text-[12px] z-5 hover:cursor-pointer"
                   onClick={() => router.push(item.href)}
                 >
                   {item.label}
@@ -94,9 +94,9 @@ function Nav() {
                     />
                   }
                 </a>
-                <div className="absolute top-[-15px] left-[-5px] text-[52px] font-[600] text-[#DFE8EA] opacity-2 z-[-1]">
+                {/* <div className="absolute top-[-15px] left-[-5px] text-[52px] font-[600] text-[#DFE8EA] opacity-2 z-[-1]">
                   {pathname == item.href ? item.index : ''}
-                </div>
+                </div> */}
                 <ul className="hidden absolute top-[20px] left-0 mt-4 space-y-2 bg-schemetwo rounded-lg text-gray-700 group-hover:block shadow-2xl hover:cursor-pointer">
                   {item.items.sort((a,b) => a.label.localeCompare(b.label) ).map((subitem, idx) => 
                     <li 

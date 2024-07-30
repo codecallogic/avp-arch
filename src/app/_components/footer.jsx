@@ -35,9 +35,9 @@ const Footer = ({}) => {
                     />
                   }
                 </a>
-                <div className="absolute top-[-15px] left-[-5px] text-[52px] font-[600] z-[-1] text-white opacity-10 ">
+                {/* <div className="absolute top-[-15px] left-[-5px] text-[52px] font-[600] z-[-1] text-white opacity-10 ">
                   {pathname == item.href ? item.index : ''}
-                </div>
+                </div> */}
                 <ul className="hidden absolute top-[20px] left-0 mt-4 space-y-2 bg-schemetwo rounded-lg text-gray-700 group-hover:block shadow-2xl hover:cursor-pointer">
                   {item.items.sort((a,b) => a.label.localeCompare(b.label) ).map((subitem, idx) => 
                     <li 
@@ -50,11 +50,11 @@ const Footer = ({}) => {
                 </ul>
               </li>
             )}
-            <div className="absolute top-[-350px] right-[-600px] text-schemeten z-[-1] max-[1650px]:-right-[500px] max-2xl:-right-[400px] max-xl:-right-[280px] max-lg:-right-[50px] max-sm:top-[0px] max-sm:-right-[100px]">
+            {/* <div className="absolute top-[-350px] right-[-600px] text-schemeten z-[-1] max-[1650px]:-right-[500px] max-2xl:-right-[400px] max-xl:-right-[280px] max-lg:-right-[50px] max-sm:top-[0px] max-sm:-right-[100px]">
               {navLinks.map((item, idx) => 
                 <p key={idx} className="text-white opacity-30 text-[520px] font-[600] max-sm:text-[320px]">{pathname == item.href ? item.index : ''}</p>
               )}
-            </div>
+            </div> */}
           </ul>
         </div>
       </footer>

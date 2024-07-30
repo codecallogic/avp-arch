@@ -75,14 +75,14 @@ const Contact = ({}) => {
   }
   
   return (
-    <div className="bg-schemefive text-white dark:text-white px-[300px] py-[250px] h-full grid grid-cols-4 max-2xl:px-[200px] max-xl:px-[100px] max-sm:px-[30px] max-sm:py-[150px]">
-      <div className="col-span-2 max-xl:col-span-3 max-md:col-span-4">
+    <div className="bg-schemefive text-white dark:text-white py-[250px] h-full w-full flex justify-center max-2xl:px-[200px] max-xl:px-[100px] max-sm:px-[30px] max-sm:py-[150px]">
+      <div className="max-xl:col-span-3 max-md:col-span-4">
         <h1 className="text-[60px] font-[200] uppercase text-white dark:text-white  max-sm:text-[42px]">Contact Us</h1>
         <p className="text-[16px] font-[200] text-white dark:text-white">Lets work together 916.399.3767 or arthur@avparch.com.</p>
         <br />
         <p className="text-[16px] font-[200] text-white dark:text-white">Fill out this form or reach out to us via phone or email to schedule a call to discuss your project. </p>
         <br />
-        <div className="w-[80%] flex flex-col gap-y-3 my-3">
+        <div className="w-[100%] flex flex-col gap-y-3 my-3">
           <InputFieldText
             inputType={'text'}
             label={'Name *'}

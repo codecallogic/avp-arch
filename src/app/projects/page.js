@@ -38,12 +38,13 @@ const Projects = ({}) => {
       <div className="bg-schemefive relative w-full grid grid-cols-12 mt-200 h-full pb-20 ">
         <div className="col-span-2 max-2xl:col-span-1 max-lg:hidden"></div>
         <div className="col-span-8 items-center px-5 max-2xl:col-span-10 max-lg:col-span-12">
-          <h1 className="uppercase text-[60px] mt-[200px] font-[300] text-white dark:text-white px-20 mb-10 max-md:text-[48px] max-lg:px-3">Projects</h1>
+          <h1 className="uppercase text-[60px] mt-[200px] font-[300] text-white dark:text-white px-10 mb-10 max-md:text-[48px] max-lg:px-3">Projects</h1>
           { projects.length > 0 && projects.map((item, idx) => 
             <div 
               key={idx}
-              className="flex flex-col items-center px-10 max-lg:items-center max-lg:px-3"
+              className="flex flex-col px-10 gap-y-5 max-lg:px-3"
             >
+              <h1 className={`text-[32px] text-white dark:text-white mt-[80px] py-5 font-[300] ` + (idx !== 0 ? ' border-t-[1px] border-schemeone border-opacity-90  ' : '')}>{item.title}</h1>
               <Image
                 src={`/assets/projects/${item.image}`}
                 width={2000}
@@ -52,7 +53,7 @@ const Projects = ({}) => {
                 layout="responsive"
                 quality={100}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="w-[100%] h-[550px] text-center bg-cover object-cover shadow-lg my-10 min-[2800px]:h-[700px] max-lg:w-[100%] max-sm:w-[100%]"
+                className="w-[100%] h-[550px] text-center bg-cover object-cover shadow-lg mt-1 mb-3 min-[2800px]:h-[700px] max-lg:w-[100%] max-sm:w-[100%]"
               /> 
               <div className="w-[100%] grid grid-cols-12 my-3 max-lg:w-[80%] max-sm:w-[100%]">
                 <div className="col-span-6 max-sm:col-span-12 max-sm:my-3 max-sm:order-2">
@@ -164,7 +165,6 @@ const Projects = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col justify-start col-span-6 px-8 max-sm:col-span-12 max-sm:order-1 ">
-                  <h1 className="text-[32px] text-white dark:text-white font-[300]">{item.title}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Location: {item.location}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Building Information: {item.building}</h1>
                   <h1 className="text-[14px] text-white dark:text-white font-[300]">Consultants: {item.consultants}</h1>
