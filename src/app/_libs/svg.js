@@ -25,9 +25,14 @@ const SVG = ({svg, width, height, schemeOne, schemeTwo, backgroundColor, dataOne
           break;
 
         case 'arrowRight':
-          return <svg width={width} height={height} viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill={backgroundColor} d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z"/>
-              <path fill={schemeOne} fillRule="evenodd" clipRule="evenodd" d="M11.0886 6.18499C10.8717 6.43163 10.8717 6.83153 11.0886 7.07817L13.1032 9.36842H5.55556C5.24873 9.36842 5 9.65119 5 10C5 10.3488 5.24873 10.6316 5.55556 10.6316H13.1032L11.0886 12.9218C10.8717 13.1685 10.8717 13.5684 11.0886 13.815C11.3056 14.0617 11.6574 14.0617 11.8743 13.815L14.8373 10.4466C15.0542 10.1999 15.0542 9.80005 14.8373 9.55341L11.8743 6.18499C11.6574 5.93834 11.3056 5.93834 11.0886 6.18499Z"/>
+          return <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width={width} height={height}>
+            <path fill={schemeOne} d="M 25 48 C 37.683594 48 48 37.683594 48 25 C 48 12.316406 37.683594 2 25 2 C 12.316406 2 2 12.316406 2 25 C 2 37.683594 12.316406 48 25 48 Z M 12 24 L 30 24 L 30 18 L 37 25 L 30 32 L 30 26 L 12 26 Z"/>
+          </svg>
+          break;
+
+        case 'arrowLeft':
+          return <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width={width} height={height}>
+              <path fill={schemeOne} d="M 25 2 C 12.316406 2 2 12.316406 2 25 C 2 37.683594 12.316406 48 25 48 C 37.683594 48 48 37.683594 48 25 C 48 12.316406 37.683594 2 25 2 Z M 38 26 L 20 26 L 20 32 L 13 25 L 20 18 L 20 24 L 38 24 Z"/>
             </svg>
           break;
         

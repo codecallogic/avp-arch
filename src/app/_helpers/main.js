@@ -15,3 +15,31 @@ export const initApp = () => {
   }
   
 }
+
+export const projectSlider = (index, increment, setSlider) => {
+
+  console.log(index, increment, setSlider)
+  
+  setSlider((prevProjects) => {
+    console.log(prevProjects)
+    return prevProjects.map((project, i) => {
+      if (i === index) {
+        let newCount = project.count + increment;
+
+        // Prevent count from going below zero
+        if (newCount < 0) {
+          newCount = 0;
+        }
+
+        // Reset count to zero if it reaches the length of the list
+        if (newCount >= project.list.length) {
+          newCount = 0;
+        }
+
+        return { ...project, count: newCount };
+      }
+      return project;
+    });
+  });
+  
+}
