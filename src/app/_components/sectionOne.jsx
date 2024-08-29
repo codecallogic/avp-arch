@@ -16,7 +16,7 @@ const SectionOne = ({}) => {
       <div className="flex justify-center items-start mt-10 pb-[100px] max-md:px-10">
         <div className="w-[600px] flex flex-col justify-center items-start">
           <h1 className="text-[52px] font-[200] mb-5 uppercase">It just starts with a vision, and we can make that a reality</h1>
-          <h2 className="text-[22px] font-[200] uppercase my-10">Our primary goal is to transform your vision into reality by creating residential design buildings in Sacramento, California and the surrounding area. </h2>
+          <h2 className="text-[22px] font-[200] uppercase my-10">Our primary focus is to transform your goal into reality by creating residential design buildings in Sacramento, California and the surrounding area. </h2>
           <br />
           <p className="text-[16px] font-[200]">Designing spaces requires a thoughtful and intentional approach to create functional, aesthetically pleasing environments that fundamentally meet the owners personal needs. This involves considering factors such as circulation, ergonomics, and using materials, textures, and colors that evoke emotions to foster a sense of community within the home.</p>
           <br />

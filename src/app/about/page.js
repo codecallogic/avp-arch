@@ -35,11 +35,11 @@ const About = ({}) => {
               <div className="grid grid-cols-2 pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em] max-lg:grid-cols-1">
                 <div className="col-span-1">
                   <Image
-                    src="/assets/abouttwo.jpeg"
+                    src="/assets/abouttwo.png"
                     width={400}
                     height={400}
                     alt="Picture of the author"
-                    className="w-[90%] h-[150px] text-center bg-cover object-cover shadow-md max-lg:mb-5 max-md:h-[250px] max-lg:w-[100%]"
+                    className="w-[90%] h-[150px] text-center bg-cover object-cover max-lg:mb-5 max-md:h-[250px] max-lg:w-[100%]"
                   />
                 </div>
                 <p className="col-span-1">AVP Arch Drafting was established in 2017 with the goal of realizing clients' visions and projects. Whether it's small-scale or large-scale work, each project comes with its own set of requirements and obstacles. This has greatly assisted us in anticipating and circumventing these obstacles in advance.</p>
@@ -53,12 +53,23 @@ const About = ({}) => {
                     width={400}
                     height={400}
                     alt="Picture of the author"
-                    className="w-[90%] h-[150px] text-center bg-cover object-cover shadow-md max-lg:mb-5 max-md:h-[250px] max-lg:w-[100%]"
+                    className="w-[90%] h-[150px] text-center bg-cover object-cover max-lg:mb-5 max-md:h-[250px] max-lg:w-[100%]"
                   />
                 </div>
                 <p className="col-span-1">Our expertise lies in the fusion of creativity and technical skills to design residential spaces, including ADUs, with a focus on efficient space utilization. We acknowledge the importance of comprehending human interaction within a space for an effective design.</p>
               </div>
-              <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">Bringing an idea to life entails grasping the requirements and desires of the inhabitants, while also taking into account aspects like site arrangement, spatial organization, financial constraints, and regulatory guidelines.</p>
+              <div className="grid grid-cols-2 pt-10 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em] max-lg:grid-cols-1">
+                <div className="col-span-1">
+                  <Image
+                    src="/assets/aboutfour.png"
+                    width={400}
+                    height={400}
+                    alt="Picture of the author"
+                    className="w-[90%] h-[150px] text-center bg-cover object-cover max-lg:mb-5 max-md:h-[250px] max-lg:w-[100%]"
+                  />
+                </div>
+                <p className="col-span-1">Bringing an idea to life entails grasping the requirements and desires of the inhabitants, while also taking into account aspects like site arrangement, spatial organization, financial constraints, and regulatory guidelines.</p>
+              </div>
               <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">Whether it's contemporary open-concept living or conventional family dwellings, we are well-equipped to tackle the obstacles each project phase presents.</p>
               <p className="pt-5 pb-5 font-[200] text-[16px] translate-[.02em] leading-[1.5em]">Reach out to us via phone or email to schedule a call to discuss your project.</p>
               <div 

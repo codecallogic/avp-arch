@@ -37,7 +37,7 @@ const Hero = () => {
       </video> */}
       <Image
         ref={parallaxOne}
-        src="/assets/homeone.1.png"
+        src="/assets/homeone.2.png"
         width={1900}
         height={1200}
         alt="Picture of the author"

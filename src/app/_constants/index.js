@@ -53,10 +53,6 @@ export const projects = [
       },
       {
         type: 'image',
-        href: 'projectfive.3.jpg'
-      },
-      {
-        type: 'image',
         href: 'projectfive.4.jpg'
       },
       {
@@ -93,11 +89,15 @@ export const projects = [
       {
         type: 'image',
         href: 'projectone.jpeg'
+      },
+      {
+        type: 'image',
+        href: 'projectone.1.jpg'
       }
     ],
     image: 'projectone.jpeg',
-    imageTwo: '',
-    imageThree: '',
+    imageTwo: 'projecttwo.jpeg',
+    imageThree: 'projectthree.jpeg',
     imageFour: '',
     description: 'Located on a 3.2 acre parcel, this modern prairie style residence showcases a spacious design with a prominent focus on horizontal lines. The property boasts low hip roofs, a welcoming front porch, and expansive single hung and fixed windows. The combination of white herdie board siding, dark garage, window trim, and shingle roof creates a striking contrast between materials.',
     paragraphTwo: 'Upon entering, a generous foyer leads to a sizable great room with an open kitchen, flanked by bedrooms on one side and a private master bedroom area on the other. The 900 square foot covered rear porch offers the perfect spot for the family to relax and enjoy the pleasant Placer county breeze while cooking on the barbecue.',

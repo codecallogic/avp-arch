@@ -32,7 +32,6 @@ const Contact = ({}) => {
 
     if(!name) return setMessage('Name is required')
     if(!email) return setMessage('Email is required')
-    if(!phone) return setMessage('Phone is required')
     setLoading('contactMe')
     
     try {
@@ -109,7 +108,7 @@ const Contact = ({}) => {
           ></InputFieldText>
           <InputFieldText
             inputType={'text'}
-            label={'Phone Number *'}
+            label={'Phone Number'}
             value={phone}
             dispatch={setPhone}
             type={'phone'}
@@ -218,7 +217,7 @@ const Contact = ({}) => {
                 </svg>
               </span>
             </label>
-            Rennovation
+            Renovation
           </div> 
           <div className="inline-flex items-center text-white dark:text-white">
             <label className="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">

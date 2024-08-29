@@ -186,7 +186,10 @@ function Nav() {
                 key={idx}
               >
                 <a 
-                  onClick={() => router.push(item.href)}
+                  onClick={() => (
+                    router.push(item.href),
+                    initApp()
+                  )}
                   className="flex items-center text-[14px] text-schemeseven w-full text-center py-5 hover:opacity-90 border-b-[1px] border-schemeseven border-opacity-[.7] transition-all duration-800 hover:-translate-y-2 px-6 hover:cursor-pointer">
                   <span className="ml-3 max-sm:text-[14px] mr-3">{item.label}</span>
                 </a>
