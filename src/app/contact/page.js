@@ -53,7 +53,6 @@ const Contact = ({}) => {
       })
       
       setName('')
-      setLastName('')
       setEmail('')
       setPhone('')
       setAddress('')
@@ -64,7 +63,7 @@ const Contact = ({}) => {
       setNotSure(false)
       setInstructions('')
       setLoading('')
-      setMessage(response.data.contactMe.message)
+      setMessage(response.data.contact.message)
 
     } catch (error) {
       setLoading('')
