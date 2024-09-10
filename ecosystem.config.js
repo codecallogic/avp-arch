@@ -8,7 +8,7 @@ module.exports = {
     production : {
       key  : 'arthur.pem',
       user : 'ubuntu',
-      host : '54.67.109.136',
+      host : '54.67.32.188',
       ref  : 'origin/master',
       repo : 'git@github.com:codecallogic/avp-arch.git',
       path : '/home/ubuntu/client',
