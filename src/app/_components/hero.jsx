@@ -25,7 +25,7 @@ const Hero = () => {
   
   return (
     <section
-      className='w-full flex flex-col h-[1000px] md:gap-10 md:max-container md:mb-5 md:px-[6rem] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px]'
+      className='w-full flex flex-col h-[1200px] md:gap-10 md:max-container md:mb-5 md:px-[6rem] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px]'
     >
       {/* <video
         className='absolute inset-0 w-full h-[1200px] object-cover max-md:hidden'
@@ -41,7 +41,7 @@ const Hero = () => {
         width={1900}
         height={1200}
         alt="Picture of the author"
-        className="absolute z-10 inset-0 -top-[50px] w-full h-[1000px] text-center bg-cover object-cover max-lg:h-[1000px] max-sm:h-[600px] max-sm:top-[180px] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px] min-[2800px]:-top-[60px] min-[2000px]:-top-[60px]"
+        className="absolute z-10 inset-0 -top-[0px] w-full h-[1000px] text-center bg-cover object-cover max-lg:h-[1000px] max-sm:h-[600px] max-sm:top-[180px] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px] min-[2800px]:-top-[60px] min-[2000px]:-top-[60px]"
       />
       <div className="relative -z-1">
         <div className="fixed top-[80px] right-[150px] flex flex-col items-center justify-center py-3 max-sm:top-[80px] max-sm:left-[100px]">

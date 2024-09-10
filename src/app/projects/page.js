@@ -106,14 +106,16 @@ const Projects = ({}) => {
                 }
               </div>
               <div className="w-[100%] grid grid-cols-12 my-3 max-lg:w-[80%] max-sm:w-[100%]">
-                <div className="flex flex-col justify-start col-span-12 px-8 max-sm:col-span-12 max-sm:order-1 ">
-                  <div className="flex flex-col gap-y-2 mb-5 px-3">
+                <div className="flex flex-col justify-start col-span-12  max-sm:col-span-12 max-sm:order-1 ">
+                  <div className="flex flex-col gap-y-2 mb-5">
                     <h1 className="text-[18px] text-white dark:text-white font-[500]">Location: {item.location}</h1>
                     <h1 className="text-[18px] text-white dark:text-white font-[500]">Building Information: {item.building}</h1>
                     <h1 className="text-[18px] text-white dark:text-white font-[500]">Consultants: {item.consultants}</h1>
                     <h1 className="text-[18px] text-white dark:text-white font-[500]">Status: {item.status}</h1>
                   </div>
+                  {item.descriptionTitle && <p className="font-[400] text-[18px] text-white mt-3 capitalize dark:text-white">{item.descriptionTitle}</p>}
                   {item.description && <p className="font-[200] text-[16px] my-5 text-white dark:text-white">{item.description}</p>}
+                  {item.paragraphTwoTitle && <p className="font-[400] text-[18px] text-white mt-3 capitalize dark:text-white">{item.paragraphTwoTitle}</p>}
                   {item.paragraphTwo && <p className="font-[200] text-[16px] my-5 text-white dark:text-white">{item.paragraphTwo}</p>}
                   {item.paragraphThree && <p className="font-[200] text-[16px] my-5 text-white dark:text-white">{item.paragraphThree}</p>}
                   {item.paragraphFour && <p className="font-[200] text-[16px] my-5 text-white dark:text-white">{item.paragraphFour}</p>}

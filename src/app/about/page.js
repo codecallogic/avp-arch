@@ -28,7 +28,7 @@ const About = ({}) => {
                 className="mt-[30px] w-max px-20 uppercase text-[22px] font-[200] text-white dark:text-white" 
               >
                 <div>Arthur Pristupa</div>
-                <span className="block text-center text-[14px] lowercase">Owner</span>
+                <span className="block text-center text-[14px] capitalize">Owner</span>
               </h1>
             </div>
             <div className="px-20 mt-20 w-[80%] max-md:px-10 max-md:w-[100%]">
@@ -78,13 +78,13 @@ const About = ({}) => {
               >
                 <Button
                   label='Contact us'
-                  backgroundColor={'white'}
+                  backgroundColor={'#61B863'}
                   svgColor={'white'}
                   width={150}
                   height={50}
                   font={400}
                   fullWidth={false}
-                  textColor={'#252627'}
+                  textColor={'white'}
                   borderColor={'#242529'}
                   svg={''}
                   href={''}

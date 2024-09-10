@@ -88,10 +88,6 @@ export const projects = [
     list: [
       {
         type: 'image',
-        href: 'projectone.jpeg'
-      },
-      {
-        type: 'image',
         href: 'projectone.1.jpg'
       }
     ],
@@ -255,7 +251,9 @@ export const projects = [
     imageFour: '',
     video: 'https://avparch.s3.us-west-1.amazonaws.com/49th+St+ADU.mp4',
     thumbnail: '/assets/thumbnails/projectsevenvid.png',
+    descriptionTitle: 'A typical plan option',
     description: 'Situated on a .16 acre plot, this Accessory Dwelling Unit features a simple yet highly functional layout with hardie board siding, dark trim windows and roof, and a French double entryway that opens up to a combined living and kitchen space. The large windows create an airy atmosphere, leading to two bedrooms and a bathroom accessible through a hallway that is distinct from the main living areas.',
+    paragraphTwoTitle: 'More on ADUs',
     paragraphTwo: 'ADUs have become increasingly popular in recent years, particularly following the enactment of laws in 2017 by the state of California to encourage the construction of ADUs. There are 3 main types of ADUs in California:',
     paragraphThree: 'Detached ADUs: These units are standalone structures not connected to the main house, like a backyard cottage.',
     paragraphFour: 'Attached ADUs or JADUs: These units are connected to the main house in some way, such as an apartment added to the main house.',
@@ -295,7 +293,7 @@ export const projects = [
     imageFour: 'projecteight.3.jpg',
     video: 'https://avparch.s3.us-west-1.amazonaws.com/FELL+ST+VIDEO.mp4',
     thumbnail: '/assets/thumbnails/projecteightvid.png',
-    description: 'Situated on a .16 acre plot, this Accessory Dwelling Unit features a simple yet highly functional layout with hardie board siding, dark trim windows and roof, and a French double entryway that opens up to a combined living and kitchen space. The large windows create an airy atmosphere, leading to two bedrooms and a bathroom accessible through a hallway that is distinct from the main living areas.',
+    description: `The 2.94-acre parcel is set to be divided into roughly 24 lots, with plans for major road enhancements and connections to utility infrastructure. Our team is currently working with the City of Sacramento's planning division to move forward with the development of this0 project.`,
     paragraphTwo: '',
     shortDescr: 300,
     longDescr: 700,

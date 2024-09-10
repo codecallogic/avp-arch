@@ -287,7 +287,7 @@ const Contact = ({}) => {
           >
             <Button
               label='Submit'
-              backgroundColor={'#564E58'}
+              backgroundColor={'#61B863'}
               svgColor={'white'}
               width={150}
               height={50}

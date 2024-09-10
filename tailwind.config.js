@@ -28,6 +28,7 @@ module.exports = {
       'schemeeight': '#242529',
       'schemenine': '#404040',
       'schemeten': '#1E1F23',
+      'schemeeleven': '#61B863',
       'error': '#C91618',
       'white': '#FFFFFF',
       'black': '#000000',
