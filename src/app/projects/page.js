@@ -57,7 +57,7 @@ const Projects = ({}) => {
                     layout="responsive"
                     quality={100}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="text-center bg-cover object-cover shadow-lg mt-1 mb-3 min-[2800px]:h-[700px] max-lg:w-[100%] max-sm:w-[100%]"
+                    className="text-center bg-cover object-cover shadow-lg min-[2800px]:h-[700px] max-lg:w-[100%] max-sm:w-[100%]"
                   /> 
                 }
                 {item.list[item.count].type == 'video' &&
@@ -91,17 +91,19 @@ const Projects = ({}) => {
                   />
                 </div> */}
                 {item.list.length > 1 &&
-                  <div 
-                    className="absolute top-[50%] right-5 bg-schemefour rounded-full shadow-2xl hover:cursor-pointer"
-                    onClick={() => projectSlider(idx, 1, setSlider)}
-                  >
-                    <SVG
-                      svg={'arrowRight'}
-                      alt="Arrow Right"
-                      width={50}
-                      height={50}
-                      schemeOne={'#ffffff'}
-                    />
+                  <div className="absolute top-0 bg-black opacity-70 right-0 h-full w-[40px] flex items-center justify-center shadow-2xl">
+                    <div 
+                      className="rounded-full shadow-2xl hover:cursor-pointer"
+                      onClick={() => projectSlider(idx, 1, setSlider)}
+                    >
+                      <SVG
+                        svg={'arrowRight'}
+                        alt="Arrow Right"
+                        width={30}
+                        height={30}
+                        schemeOne={'white'}
+                      />
+                    </div>
                   </div>
                 }
               </div>

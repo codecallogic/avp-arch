@@ -50,7 +50,7 @@ const Hero = () => {
             width={250}
             height={250}
             alt="Picture of the author"
-            className="w-full h-[100px] p-0 text-center max-lg:w-[100%] max-md:h-[100px] max-sm:h-[70px] max-sm:w-[50%]"
+            className="w-full h-[100px] p-0 text-center max-lg:w-[100%] max-md:h-[100px] max-sm:h-[70px]  max-[640px]:w-[80%] max-[550px]:w-[100%]"
           />
         </div>
         <div

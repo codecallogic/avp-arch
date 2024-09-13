@@ -89,6 +89,10 @@ export const projects = [
       {
         type: 'image',
         href: 'projectone.1.jpg'
+      },
+      {
+        type: 'image',
+        href: 'projectone.2.jpg'
       }
     ],
     image: 'projectone.jpeg',
@@ -185,6 +189,10 @@ export const projects = [
       {
         type: 'image',
         href: 'projectfour.jpeg'
+      },
+      {
+        type: 'image',
+        href: 'projectfour.1.jpeg'
       }
     ],
     image: 'projectfour.jpeg',
@@ -293,7 +301,7 @@ export const projects = [
     imageFour: 'projecteight.3.jpg',
     video: 'https://avparch.s3.us-west-1.amazonaws.com/FELL+ST+VIDEO.mp4',
     thumbnail: '/assets/thumbnails/projecteightvid.png',
-    description: `The 2.94-acre parcel is set to be divided into roughly 24 lots, with plans for major road enhancements and connections to utility infrastructure. Our team is currently working with the City of Sacramento's planning division to move forward with the development of this0 project.`,
+    description: `The 2.94-acre parcel is set to be divided into roughly 24 lots, with plans for major road enhancements and connections to utility infrastructure. Our team is currently working with the City of Sacramento's planning division to move forward with the development of this project.`,
     paragraphTwo: '',
     shortDescr: 300,
     longDescr: 700,
