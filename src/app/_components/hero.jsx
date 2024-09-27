@@ -44,7 +44,7 @@ const Hero = () => {
         className="absolute z-10 inset-0 -top-[0px] w-full h-[1000px] text-center bg-cover object-cover max-lg:h-[1000px] max-sm:h-[600px] max-sm:top-[180px] min-[2000px]:h-[1200px] min-[2800px]:h-[1600px] min-[2800px]:-top-[60px] min-[2000px]:-top-[60px]"
       />
       <div className="relative -z-1">
-        <div className="fixed top-[80px] right-[150px] flex flex-col items-center justify-center py-3 max-sm:top-[80px] max-sm:left-[100px]">
+        {/* <div className="fixed top-[80px] right-[150px] flex flex-col items-center justify-center py-3 max-sm:top-[80px] max-sm:left-[100px]">
           <Image
             src="/assets/logo.png"
             width={250}
@@ -52,7 +52,7 @@ const Hero = () => {
             alt="Picture of the author"
             className="w-full h-[100px] p-0 text-center max-lg:w-[100%] max-md:h-[100px] max-sm:h-[70px]  max-[640px]:w-[80%] max-[550px]:w-[100%]"
           />
-        </div>
+        </div> */}
         <div
           className="max-md:hidden"
         >

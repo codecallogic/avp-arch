@@ -40,32 +40,32 @@ const Projects = ({}) => {
       <div className="bg-schemefive relative w-full grid grid-cols-12 mt-200 h-full pb-20 ">
         <div className="col-span-2 max-2xl:col-span-1 max-lg:hidden"></div>
         <div className="col-span-8 items-center px-5 max-2xl:col-span-10 max-lg:col-span-12">
-          <h1 className="uppercase text-[60px] mt-[200px] font-[300] text-white dark:text-white px-10 max-md:text-[48px] max-lg:px-3">Projects</h1>
-          { slider.length > 0 && slider.map((item, idx) => 
+          <h1 className="uppercase text-[60px] mt-[200px] mb-[20px] font-[300] text-white dark:text-white px-10 max-md:text-[48px] max-lg:px-3">Projects</h1>
+          {slider.length > 0 && slider.map((item, idx) => 
             <div 
               key={idx}
               className="flex flex-col px-10 gap-y-5 max-lg:px-3"
             >
-              <h1 className={`text-[32px] text-white dark:text-white mt-[80px] py-5 font-[500] ` + (idx !== 0 ? ' border-t-[1px] border-schemeone border-opacity-90  ' : '')}>{item.title}</h1>
               <div className="relative w-[100%]">
-                {item.list[item.count].type == 'image' && 
+                {item.list[item.count].type === 'image' && 
                   <Image
                     src={`/assets/projects/${item.list[item.count].href}`}
                     width={400}
                     height={400}
                     alt="Picture of project"
                     layout="responsive"
-                    quality={100}
+                    quality={85}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="text-center bg-cover object-cover shadow-lg min-[2800px]:h-[700px] max-lg:w-[100%] max-sm:w-[100%]"
-                  /> 
+                    placeholder="blur"
+                    blurDataURL="/assets/blur-placeholder.png"
+                  />
                 }
-                {item.list[item.count].type == 'video' &&
+                {item.list[item.count].type === 'video' &&
                   <video 
-                    className="w-[100%] h-[650px]" 
+                    className="w-[100%] h-auto max-h-[650px] max-md:h-auto" 
                     controls 
                     preload="none"
-                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     poster={item.thumbnail}
                   >
                     <source src={item.list[item.count].href} type="video/mp4" />
@@ -78,23 +78,13 @@ const Projects = ({}) => {
                     Your browser does not support the video tag.
                   </video>
                 }
-                {/* <div 
-                  className="absolute top-[50%] left-5 bg-black rounded-full hover:cursor-pointer"
-                  onClick={() => projectSlider(idx, -1, setSlider)}
-                >
-                  <SVG
-                    svg={'arrowLeft'}
-                    alt="Arrow Left"
-                    width={50}
-                    height={50}
-                    schemeOne={'#ffffff'}
-                  />
-                </div> */}
                 {item.list.length > 1 &&
-                  <div className="absolute top-0 bg-black opacity-70 right-0 h-full w-[40px] flex items-center justify-center shadow-2xl">
+                  <div 
+                    className="absolute top-0 bg-black opacity-70 right-0 h-full w-[40px] flex items-center justify-center shadow-2xl hover:cursor-pointer"
+                    onClick={() => projectSlider(idx, 1, setSlider)}
+                  >
                     <div 
-                      className="rounded-full shadow-2xl hover:cursor-pointer"
-                      onClick={() => projectSlider(idx, 1, setSlider)}
+                      className="rounded-full shadow-2xl"
                     >
                       <SVG
                         svg={'arrowRight'}
@@ -109,11 +99,12 @@ const Projects = ({}) => {
               </div>
               <div className="w-[100%] grid grid-cols-12 my-3 max-lg:w-[80%] max-sm:w-[100%]">
                 <div className="flex flex-col justify-start col-span-12  max-sm:col-span-12 max-sm:order-1 ">
+                  <h1 className={`text-[32px] text-white dark:text-white mt-[10px] py-5 font-[500] ` + (idx !== 0 ? ' border-t-[1px] border-schemeone border-opacity-90  ' : '')}>{item.title}</h1>
                   <div className="flex flex-col gap-y-2 mb-5">
-                    <h1 className="text-[18px] text-white dark:text-white font-[500]">Location: {item.location}</h1>
-                    <h1 className="text-[18px] text-white dark:text-white font-[500]">Building Information: {item.building}</h1>
-                    <h1 className="text-[18px] text-white dark:text-white font-[500]">Consultants: {item.consultants}</h1>
-                    <h1 className="text-[18px] text-white dark:text-white font-[500]">Status: {item.status}</h1>
+                    <h1 className="text-[16px] text-white dark:text-white font-[500]">Location: {item.location}</h1>
+                    <h1 className="text-[16px] text-white dark:text-white font-[500]">Building Information: {item.building}</h1>
+                    <h1 className="text-[16px] text-white dark:text-white font-[500]">Consultants: {item.consultants}</h1>
+                    <h1 className="text-[16px] text-white dark:text-white font-[500]">Status: {item.status}</h1>
                   </div>
                   {item.descriptionTitle && <p className="font-[400] text-[18px] text-white mt-3 capitalize dark:text-white">{item.descriptionTitle}</p>}
                   {item.description && <p className="font-[200] text-[16px] my-5 text-white dark:text-white">{item.description}</p>}
@@ -127,6 +118,7 @@ const Projects = ({}) => {
               </div>
             </div>
           )}
+
         </div>
         {/* <div className="col-span-2 max-xl:col-span-1 max-lg:hidden"></div> */}
       </div>

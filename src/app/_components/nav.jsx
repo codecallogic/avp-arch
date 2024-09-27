@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import SVG from '@/app/_libs/svg'
+import Image from 'next/image'
 import { navLinks } from '@/app/_constants'
 import { initApp } from '@/app/_helpers/main' 
 import { useRouter } from 'next/navigation';
@@ -71,7 +72,7 @@ function Nav() {
         boxShadow: pathname == '/signup' ? 'none' : '',
       }}
     >
-      <nav className="flex items-center max-container h-[120px] px-[30px] max-xl:px-[30px] max-sm:px-[20px] max-md:h-[90px] max-md:flex-row-reverse">
+      <nav className="flex items-center justify-between max-container h-[120px] px-[30px] max-xl:px-[30px] max-sm:px-[20px] max-md:h-[90px] max-md:flex-row-reverse">
         <div className="max-md:hidden">
           <ul className="flex items-center px-2 gap-8 w-full">
             {navLinks.map((item, idx) => 
@@ -111,6 +112,13 @@ function Nav() {
             )}
           </ul>
         </div>
+        <Image
+          src="/assets/logo.png"
+          width={250}
+          height={250}
+          alt="Picture of the author"
+          className="w-[80px] h-auto"
+        />
         <button 
           id="hamburger-button"
           className='hidden max-md:flex max-lg:items-center max-lg:gap-x-5 text-3xl relative w-full h-8 hover:cursor-pointer'
@@ -159,7 +167,7 @@ function Nav() {
             Menu
           </div>
         </button>
-        <div className="hidden max-lg:block max-md:hidden"></div>
+        {/* <div className="hidden max-lg:block max-md:hidden"></div> */}
         <section 
           id="mobile-menu"
           className="fixed top-[0px] left-[20px] z-200 bg-white flex-col justify-center w-[250px] origin-left animate-open-menu hidden shadow-[20px_90px_60px_15px_rgba(0,0,0,0.3)] ml-[-30px]"
