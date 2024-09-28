@@ -36,6 +36,9 @@ const above = localFont({
 export const metadata = {
   title: "AVP Arch",
   description: "Drafting planning and design",
+  icons: {
+    icon: '/favicon.png', // Path to your favicon in the public folder
+  }
 };
 
 export default function RootLayout({ children }) {
