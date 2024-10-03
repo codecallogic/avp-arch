@@ -20,7 +20,7 @@ const SectionOne = ({}) => {
           <br />
           <p className="text-[16px] font-[200]">Designing spaces requires a thoughtful and intentional approach to create functional, aesthetically pleasing environments that fundamentally meet the owners personal needs. This involves considering factors such as circulation, ergonomics, and using materials, textures, and colors that evoke emotions to foster a sense of community within the home.</p>
           <br />
-          <p className="text-[16px] font-[200]">I am enthusiastic about assisting you in bringing your ideas to fruition, whether it involves a new home build, ADU, addition, or renovation. Throughout the project, you will receive guidance every step of the way, from brainstorming and planning to developing construction plans. Together, we will work towards transforming your vision into a concrete reality. </p>
+          <p className="text-[16px] font-[200]">I am enthusiastic about assisting you in bringing your ideas to fruition, whether it involves a new home build, ADU, addition, or renovation. Throughout the project, you will receive guidance along the way, from brainstorming and planning to developing construction plans. Together, we will work towards transforming your vision into a concrete reality. </p>
           <br />
           <div 
             className="my-10"

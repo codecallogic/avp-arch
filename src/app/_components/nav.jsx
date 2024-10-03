@@ -46,7 +46,7 @@ function Nav() {
     };
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
-  const fixedClass = isFixed ? ` bg-white h-[115px] max-md:h-[75px] ${pathname == '/' ? ' bg-opacity-[50%] ' : '' }` : ` bg-white ${pathname == '/' ? ' bg-opacity-[50%] ' : '' }`;
+  const fixedClass = isFixed ? ` bg-white h-[115px] max-md:h-[90px] ${pathname == '/' ? ' bg-opacity-[50%] ' : '' }` : ` bg-white ${pathname == '/' ? ' bg-opacity-[50%] ' : '' }`;
 
   useEffect(() => {
     setLoginState(authReducer)
@@ -72,7 +72,7 @@ function Nav() {
         boxShadow: pathname == '/signup' ? 'none' : '',
       }}
     >
-      <nav className="flex items-center justify-between max-container h-[120px] px-[30px] max-xl:px-[30px] max-sm:px-[20px] max-md:h-[90px] max-md:flex-row-reverse">
+      <nav className="flex items-center justify-between max-container h-[1200px] px-[30px] max-xl:px-[30px] max-sm:px-[20px] max-md:h-[90px] max-md:flex-row-reverse">
         <div className="max-md:hidden">
           <ul className="flex items-center px-2 gap-8 w-full">
             {navLinks.map((item, idx) => 

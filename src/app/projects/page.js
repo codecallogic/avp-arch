@@ -46,7 +46,8 @@ const Projects = ({}) => {
               key={idx}
               className="flex flex-col px-10 gap-y-5 max-lg:px-3"
             >
-              <div className="relative w-[100%]">
+              <div className={`` + (idx !== 0 ? ' border-t-[1px] border-schemeone border-opacity-90  ' : '')}></div>
+              <div className={`relative w-[100%] `}>
                 {item.list[item.count].type === 'image' && 
                   <Image
                     src={`/assets/projects/${item.list[item.count].href}`}
@@ -98,8 +99,8 @@ const Projects = ({}) => {
                 }
               </div>
               <div className="w-[100%] grid grid-cols-12 my-3 max-lg:w-[80%] max-sm:w-[100%]">
-                <div className="flex flex-col justify-start col-span-12  max-sm:col-span-12 max-sm:order-1 ">
-                  <h1 className={`text-[32px] text-white dark:text-white mt-[10px] py-5 font-[500] ` + (idx !== 0 ? ' border-t-[1px] border-schemeone border-opacity-90  ' : '')}>{item.title}</h1>
+                <div className="flex flex-col justify-start col-span-12  max-sm:col-span-12 max-sm:order-1">
+                  <h1 className={`text-[32px]  text-white dark:text-white mt-[10px] py-5 font-[500] `}>{item.title}</h1>
                   <div className="flex flex-col gap-y-2 mb-5">
                     <h1 className="text-[16px] text-white dark:text-white font-[500]">Location: {item.location}</h1>
                     <h1 className="text-[16px] text-white dark:text-white font-[500]">Building Information: {item.building}</h1>

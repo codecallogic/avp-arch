@@ -80,7 +80,7 @@ export const projects = [
     count: 0
   },
   {
-    title: 'VOGEL VALLEY RESIDENCE',
+    title: 'Vogel Valley Residence',
     location: 'Placer County, CA',
     building: '3742sf Living / 901sf Garage / 1098sf Porches 1-Story / 4BR + Office / 6BA',
     consultants: 'AY Engineering',
@@ -106,7 +106,7 @@ export const projects = [
     count: 0
   },
   {
-    title: 'SECRET RAVINE RESIDENCE',
+    title: 'Secret Ravine Residence',
     location: 'Rocklin, CA',
     building: '3444sf Living / 1521sf Garage / 781sf Porches1-Story / 4BR + Office / 4BA',
     consultants: 'AY Engineering',
@@ -146,7 +146,7 @@ export const projects = [
     count: 0
   },
   {
-    title: 'DARINA AVE RFDC TENANT IMPROVEMENT',
+    title: 'Darine Ave RFDC Tenant Improvement',
     location: 'City of Sacramento. CA',
     building: '2796sf Gross Area, 172sf Porch',
     consultants: 'Asset Development',
@@ -180,7 +180,7 @@ export const projects = [
     count: 0
   },
   {
-    title: 'LAKE FERRY RESIDENCE',
+    title: 'Lake Ferry Residence',
     location: 'Loudon County. TN',
     building: '7581sf Living / 2494sf Garage / 2585sf Porches 3-Story / 4BR + Office / 5BA / Indoor Pool / Tower Lookout',
     consultants: 'Loudon Engineering',

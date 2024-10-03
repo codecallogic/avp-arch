@@ -17,8 +17,6 @@ export const initApp = () => {
 }
 
 export const projectSlider = (index, increment, setSlider) => {
-
-  console.log(index, increment, setSlider)
   
   setSlider((prevProjects) => {
     console.log(prevProjects)
