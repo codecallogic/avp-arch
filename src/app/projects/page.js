@@ -40,11 +40,11 @@ const Projects = ({}) => {
       <div className="bg-schemefive relative w-full grid grid-cols-12 mt-200 h-full pb-20 ">
         <div className="col-span-2 max-2xl:col-span-1 max-lg:hidden"></div>
         <div className="col-span-8 items-center px-5 max-2xl:col-span-10 max-lg:col-span-12">
-          <h1 className="uppercase text-[60px] mt-[200px] mb-[20px] font-[300] text-white dark:text-white px-10 max-md:text-[48px] max-lg:px-3">Projects</h1>
+          <h1 className="uppercase text-[60px] mt-[200px] mb-[20px] font-[300] text-white dark:text-white px-10 max-md:text-[48px] max-lg:px-3"></h1>
           {slider.length > 0 && slider.map((item, idx) => 
             <div 
               key={idx}
-              className="flex flex-col px-10 gap-y-5 max-lg:px-3"
+              className="flex flex-col px-10 mb-5 gap-y-5 max-lg:px-3"
             >
               <div className={`` + (idx !== 0 ? ' border-t-[1px] border-schemeone border-opacity-90  ' : '')}></div>
               <div className={`relative w-[100%] `}>
