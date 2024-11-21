@@ -11,24 +11,18 @@ const Services = ({}) => {
           <h1 className="text-[60px] font-[200] uppercase my-5 text-center max-sm:text-[42px]">Services</h1>
           {/* Main Services List */}
 
-          <h1 className="text-[16px] font-[600] mt-10 text-left">Residential</h1>
+          <h1 className="text-[16px] font-[600] mt-10 text-left">Plan Drawings</h1>
 
           <div className="">
             <ul className="list-disc list-inside pt-5 px-5 text-[16px] font-[200] leading-[1.5em] max-sm:px-1">
-              <li>New construction</li>
-              <li>Accessory dwelling unit</li>
-              <li>Addition/renovation</li>
-              <li>Fire restoration</li>
-            </ul>
-          </div>
-          
-          <h1 className="text-[16px] font-[600] mt-10 text-left">Commercial</h1>
-          
-          <div className="">
-            <ul className="list-disc list-inside pt-5 px-5 text-[16px] font-[200] leading-[1.5em] max-sm:px-1">
-              <li>New construction</li>
-              <li>Tenant improvement</li>
-              <li>Conditional use permit</li>
+              <li>Typical Plan Set</li>
+              <li>Cover Page/Site Plan</li>
+              <li>Notes/Standards</li>
+              <li>Floor Plan (Existing/Proposed)</li>
+              <li>Elevations</li>
+              <li>Sections</li>
+              <li>Electrical Plan</li>
+              <li>Achitectural Details</li>
             </ul>
           </div>
 
