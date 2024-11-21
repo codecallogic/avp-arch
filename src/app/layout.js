@@ -217,8 +217,8 @@ export default function RootLayout({ children }) {
                             console.log("Script Error for Sunshine");
                           }
                         );
-                      }, 3000);
-                    }, 5000);
+                      }, 1000);
+                    }, 2000);
                   `,
                 }}
               />
